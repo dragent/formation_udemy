@@ -23,8 +23,15 @@
   - Liste des articles de blog avec fetch d'API (JSONPlaceholder)
   - Affichage en grille responsive
   - Liens vers les articles individuels
+  - Liste des articles de blog avec fetch d'API (JSONPlaceholder)
+  - Affichage en grille responsive
+  - Liens vers les articles individuels
 - [x] Page Contact (`/contact`)
   - Route créée
+- [x] Page Utilisateurs (`/utilisateurs`)
+  - Composant async avec simulation de chargement de données
+  - Affichage de la liste des utilisateurs
+  - Composant Loading pour l'état de chargement
 - [x] Page Utilisateurs (`/utilisateurs`)
   - Composant async avec simulation de chargement de données
   - Affichage de la liste des utilisateurs
@@ -65,6 +72,7 @@
   - Navigation principale avec liens vers :
     - Accueil
     - Blog
+    - Utilisateurs
     - Utilisateurs
     - Dashboards
     - Contact
