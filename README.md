@@ -1,36 +1,108 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Next.js App Router - Projet d'Apprentissage
 
-## Getting Started
+Ce projet est une application Next.js créée dans le cadre d'un cours sur le **Next.js App Router**. Il démontre les concepts fondamentaux et avancés du routing avec Next.js 16.
 
-First, run the development server:
+## 🚀 Technologies Utilisées
 
+- **Next.js** 16.1.1 (App Router)
+- **React** 19.2.3
+- **Tailwind CSS** 4
+- **ESLint** pour le linting
+
+## 📋 Fonctionnalités
+
+### Pages et Routes
+- ✅ Page d'accueil (`/`)
+- ✅ Blog avec liste d'articles (`/blog`)
+- ✅ Routes dynamiques pour les articles (`/blog/[id]`)
+- ✅ Page Contact (`/contact`)
+- ✅ Page Utilisateurs avec chargement asynchrone (`/utilisateurs`)
+- ✅ Système de Dashboards (`/dashboards`, `/dashboards/finance`, `/dashboards/rh`)
+- ✅ Landing page Discover (`/discover`)
+- ✅ Page 404 personnalisée
+
+### Concepts Implémentés
+- **Route Groups** : Organisation avec `(main app)` et `(marketing)`
+- **Layouts imbriqués** : Hiérarchie de layouts pour différentes sections
+- **Server Components** : Composants async pour le chargement de données
+- **Client Components** : Utilisation de hooks React (`usePathname`)
+- **Loading States** : Gestion des états de chargement avec `loading.jsx`
+- **Error Handling** : Gestion d'erreurs avec `error.jsx` et `not-found.jsx`
+- **API Integration** : Fetch d'API avec JSONPlaceholder
+- **Navigation** : Navigation côté client avec Next.js Link
+
+## 🛠️ Installation et Démarrage
+
+### Prérequis
+- Node.js 18+ 
+- npm, yarn, pnpm ou bun
+
+### Installation
+```bash
+npm install
+```
+
+### Démarrage du serveur de développement
 ```bash
 npm run dev
-# or
+# ou
 yarn dev
-# or
+# ou
 pnpm dev
-# or
+# ou
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Ouvrez [http://localhost:3000](http://localhost:3000) dans votre navigateur pour voir le résultat.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### Build de production
+```bash
+npm run build
+npm start
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📁 Structure du Projet
 
-## Learn More
+```
+src/
+├── app/
+│   ├── (main app)/          # Route group pour les routes principales
+│   │   ├── blog/
+│   │   │   ├── [id]/        # Route dynamique
+│   │   │   └── page.jsx
+│   │   ├── contact/
+│   │   ├── dashboards/
+│   │   ├── utilisateurs/
+│   │   │   ├── loading.jsx
+│   │   │   ├── error.jsx
+│   │   │   └── page.jsx
+│   │   ├── layout.jsx       # Layout avec Navbar
+│   │   └── page.jsx
+│   ├── (marketing)/          # Route group pour le marketing
+│   │   └── discover/
+│   ├── layout.jsx           # Layout racine
+│   ├── not-found.jsx        # Page 404
+│   └── globals.css
+└── components/
+    └── navbar.jsx           # Composant de navigation
+```
 
-To learn more about Next.js, take a look at the following resources:
+## 📚 Documentation
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Pour plus d'informations sur les concepts implémentés, consultez le fichier [SUIVI_COURS.md](./SUIVI_COURS.md).
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🔗 Ressources
 
-## Deploy on Vercel
+- [Documentation Next.js](https://nextjs.org/docs)
+- [App Router Documentation](https://nextjs.org/docs/app)
+- [React Documentation](https://react.dev)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📝 Notes
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Ce projet a été créé dans le cadre d'un cours d'apprentissage sur Next.js App Router. Il sert de référence pour comprendre les concepts de routing, layouts, et la gestion des états dans Next.js 16.
+
+## 🚢 Déploiement
+
+Le moyen le plus simple de déployer cette application Next.js est d'utiliser [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme).
+
+Consultez la [documentation de déploiement Next.js](https://nextjs.org/docs/app/building-your-application/deploying) pour plus de détails.
