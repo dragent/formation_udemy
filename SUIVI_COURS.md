@@ -1,10 +1,14 @@
-# Suivi de Cours - Next.js App Router
+# Suivi de Cours - Formation Udemy Next.js
 
 ## 📚 Informations du Projet
-- **Projet** : 1.app-router
+- **Projet** : Formation Udemy
 - **Framework** : Next.js 16.1.1
 - **React** : 19.2.3
 - **Styling** : Tailwind CSS 4
+
+---
+
+## 📖 Partie 1 : Next.js App Router ✅ TERMINÉE
 
 ---
 
@@ -125,8 +129,8 @@
 
 ---
 
-## 🎓 Statut du Cours
-✅ **COURS TERMINÉ** - Toutes les fonctionnalités principales du cours Next.js App Router ont été implémentées.
+## 🎓 Statut de la Partie 1
+✅ **PARTIE 1 TERMINÉE** - Toutes les fonctionnalités principales du cours Next.js App Router ont été implémentées.
 
 ### Fonctionnalités Complétées
 - ✅ Configuration et structure de base
@@ -142,6 +146,13 @@
 
 ---
 
+## 📖 Partie 2 : [À venir]
+_La partie 2 du cours commencera ici..._
+
+---
+
 ## 📅 Dernière Mise à Jour
-Date : 11/01/2026
+Date : 16/01/2026
+- Renommage du projet en "Formation Udemy"
+- Préparation pour la Partie 2 du cours
 

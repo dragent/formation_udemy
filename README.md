@@ -1,6 +1,11 @@
-# Next.js App Router - Projet d'Apprentissage
+# Formation Udemy - Next.js
 
-Ce projet est une application Next.js créée dans le cadre d'un cours sur le **Next.js App Router**. Il démontre les concepts fondamentaux et avancés du routing avec Next.js 16.
+Ce projet est une application Next.js créée dans le cadre d'une **formation Udemy** sur Next.js. Il couvre les concepts fondamentaux et avancés du framework Next.js 16.
+
+## 📚 Structure du Cours
+
+### Partie 1 : Next.js App Router ✅
+Démontre les concepts fondamentaux et avancés du routing avec Next.js 16 App Router.
 
 ## 🚀 Technologies Utilisées
 
