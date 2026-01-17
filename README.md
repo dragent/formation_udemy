@@ -6,8 +6,9 @@ Ce dépôt contient tous les projets de la formation Next.js sur Udemy, organis�
 
 ```
 formation-nextjs/
-├── 1.app-router/     # Partie 1 : Next.js App Router ✅ TERMINÉE
-└── [autres parties]  # Parties suivantes à venir...
+├── 1.app-router/              # Partie 1 : Next.js App Router ✅ TERMINÉE
+├── 2.composants-et-donnes/    # Partie 2 : Composants et Données 🚧 EN COURS
+└── [autres parties]           # Parties suivantes à venir...
 ```
 
 ## 📚 Partie 1 : Next.js App Router
@@ -22,6 +23,19 @@ npm run dev
 ```
 
 Consultez le [README.md](./1.app-router/README.md) et le [SUIVI_COURS.md](./1.app-router/SUIVI_COURS.md) pour plus de détails.
+
+## 📚 Partie 2 : Composants et Données
+
+Le projet de la partie 2 se trouve dans le dossier `2.composants-et-donnes/`.
+
+Pour démarrer ce projet :
+```bash
+cd 2.composants-et-donnes
+npm install
+npm run dev
+```
+
+Consultez le [README.md](./2.composants-et-donnes/README.md) pour plus de détails.
 
 ## 🎯 Objectif
 
