@@ -243,7 +243,8 @@
 ---
 
 ## 📅 Dernière Mise à Jour
-Date : 16/01/2026
+Date : 18/01/2026
 - Déplacement du suivi de cours à la racine du projet
 - Mise à jour de la Partie 2 avec les fonctionnalités implémentées
 - Ajout des Server Actions et routes dynamiques pour le blog
+- Traduction des messages de commit en anglais
