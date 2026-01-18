@@ -1,36 +1,147 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Formation Udemy - Next.js - Partie 2 : Composants et Données
 
-## Getting Started
+Ce projet est la **Partie 2** de la formation Udemy sur Next.js. Il se concentre sur les concepts de composants React, la gestion des données, et la distinction entre composants Client et Server.
 
-First, run the development server:
+## 📚 Structure du Cours
 
+### Partie 2 : Composants et Données 🚧
+Démontre les concepts fondamentaux des composants React dans Next.js, la gestion d'état, et le chargement de données.
+
+## 🚀 Technologies Utilisées
+
+- **Next.js** 16.1.3 (App Router)
+- **React** 19.2.3
+- **TypeScript** 5
+- **Tailwind CSS** 4
+- **ESLint** pour le linting
+
+## 📋 Fonctionnalités
+
+### Pages et Routes
+- ✅ Page d'accueil (`/`)
+- ✅ Page Form avec input contrôlé (`/form`)
+- ✅ Page Image avec fetch d'API (`/image`)
+- ✅ Page Blog avec liste des articles (`/blog`)
+- ✅ Page Blog dynamique avec article spécifique (`/blog/[id]`)
+
+### Concepts Implémentés
+- **Composants Client** : Utilisation de `"use client"` pour les composants nécessitant des hooks React
+- **Gestion d'état** : Utilisation de `useState` pour les composants interactifs
+- **Inputs contrôlés** : Gestion des formulaires avec état React et synchronisation bidirectionnelle
+- **Composants Server** : Utilisation de composants async pour le chargement de données
+- **Server Actions** : Fonctions serveur avec `"use server"` pour centraliser la logique de récupération de données
+- **Routes dynamiques** : Implémentation de routes avec paramètres `[id]` pour les pages de détail
+- **Fetch d'API** : Intégration avec JSONPlaceholder pour récupérer des données
+- **Navigation** : Utilisation de Next.js Link pour la navigation optimisée
+- **TypeScript** : Typage statique pour améliorer la maintenabilité
+
+## 🛠️ Installation et Démarrage
+
+### Prérequis
+- Node.js 18+ 
+- npm, yarn, pnpm ou bun
+
+### Installation
+```bash
+npm install
+```
+
+### Démarrage du serveur de développement
 ```bash
 npm run dev
-# or
+# ou
 yarn dev
-# or
+# ou
 pnpm dev
-# or
+# ou
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Ouvrez [http://localhost:3000](http://localhost:3000) dans votre navigateur pour voir le résultat.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Build de production
+```bash
+npm run build
+npm start
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📁 Structure du Projet
 
-## Learn More
+```
+app/
+├── layout.tsx        # Layout racine avec configuration de base
+├── page.tsx          # Page d'accueil
+├── form/
+│   └── page.jsx      # Page avec formulaire contrôlé (Client Component)
+├── image/
+│   └── page.jsx      # Page avec fetch d'image (Server Component + Server Actions)
+├── blog/
+│   ├── page.jsx      # Liste des articles (Server Component + Server Actions)
+│   └── [id]/
+│       └── page.jsx  # Article spécifique (route dynamique, Server Component)
+└── lib/
+    └── serverActions.jsx  # Server Actions pour récupération de données
+```
 
-To learn more about Next.js, take a look at the following resources:
+## 🔑 Concepts Clés
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Composants Client
+Les composants client utilisent la directive `"use client"` et permettent d'utiliser des hooks React comme `useState`, `useEffect`, etc.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+**Exemple** (`/form`) :
+- Utilisation de `useState` pour gérer l'état de l'input
+- Input contrôlé avec `value` et `onChange`
+- Affichage en temps réel de la valeur saisie
 
-## Deploy on Vercel
+### Composants Server
+Les composants serveur sont par défaut dans Next.js et peuvent être async pour charger des données.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+**Exemple** (`/image`) :
+- Fonction async pour fetch des données
+- Utilisation de Server Actions pour récupérer les données
+- Récupération d'image depuis JSONPlaceholder API
+- Affichage des données côté serveur
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Server Actions
+Les Server Actions sont des fonctions serveur marquées avec `"use server"` qui permettent de centraliser la logique de récupération de données.
+
+**Exemple** (`app/lib/serverActions.jsx`) :
+- `getImg()` : Récupère une image depuis JSONPlaceholder
+- `getPosts()` : Récupère tous les posts
+- `getPost(id)` : Récupère un post spécifique par ID
+- Réutilisables dans plusieurs composants
+
+**Exemple d'utilisation** (`/blog`) :
+- Utilisation de `getPosts()` dans un Server Component
+- Affichage en grille responsive avec Tailwind CSS
+- Navigation vers les articles individuels avec Next.js Link
+
+### Routes Dynamiques
+Les routes dynamiques permettent de créer des pages avec des paramètres variables.
+
+**Exemple** (`/blog/[id]`) :
+- Route avec paramètre dynamique `[id]`
+- Utilisation de `getPost(id)` pour récupérer un article spécifique
+- Affichage du contenu complet de l'article
+- Lien de retour vers la liste des blogs
+
+## 📚 Documentation
+
+Pour plus d'informations sur les concepts implémentés et l'avancement de cette partie, consultez le fichier [SUIVI_COURS.md](../../SUIVI_COURS.md) à la racine du projet.
+
+## 🔗 Ressources
+
+- [Documentation Next.js](https://nextjs.org/docs)
+- [App Router Documentation](https://nextjs.org/docs/app)
+- [React Documentation](https://react.dev)
+- [TypeScript Documentation](https://www.typescriptlang.org/docs)
+
+## 📝 Notes
+
+Ce projet a été créé dans le cadre d'un cours d'apprentissage sur Next.js. Il sert de référence pour comprendre les concepts de composants Client et Server, la gestion d'état avec React, et le chargement de données dans Next.js 16.
+
+## 🚢 Déploiement
+
+Le moyen le plus simple de déployer cette application Next.js est d'utiliser [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme).
+
+Consultez la [documentation de déploiement Next.js](https://nextjs.org/docs/app/building-your-application/deploying) pour plus de détails.

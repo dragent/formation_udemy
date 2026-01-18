@@ -22,11 +22,11 @@ npm install
 npm run dev
 ```
 
-Consultez le [README.md](./1.app-router/README.md) et le [SUIVI_COURS.md](./1.app-router/SUIVI_COURS.md) pour plus de détails.
+Consultez le [README.md](./1.app-router/README.md) et le [SUIVI_COURS.md](./SUIVI_COURS.md) pour plus de détails.
 
-## 📚 Partie 2 : Composants et Données
+## 📚 Partie 2 : Composants et Données 🚧
 
-Le projet de la partie 2 se trouve dans le dossier `2.composants-et-donnes/`.
+Le projet de la partie 2 se trouve dans le dossier `2.composants-et-donnes/`. Cette partie couvre les concepts de composants React, la gestion d'état avec `useState`, et la distinction entre composants Client et Server.
 
 Pour démarrer ce projet :
 ```bash
@@ -35,7 +35,11 @@ npm install
 npm run dev
 ```
 
-Consultez le [README.md](./2.composants-et-donnes/README.md) pour plus de détails.
+Consultez le [README.md](./2.composants-et-donnes/README.md) et le [SUIVI_COURS.md](./SUIVI_COURS.md) pour plus de détails.
+
+## 📋 Suivi de Cours
+
+Le fichier [SUIVI_COURS.md](./SUIVI_COURS.md) à la racine du projet contient le suivi détaillé de l'avancement de toutes les parties de la formation, incluant les fonctionnalités complétées, les notes techniques et le statut de chaque partie.
 
 ## 🎯 Objectif
 

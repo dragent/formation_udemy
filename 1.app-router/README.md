@@ -94,7 +94,7 @@ src/
 
 ## 📚 Documentation
 
-Pour plus d'informations sur les concepts implémentés, consultez le fichier [SUIVI_COURS.md](./SUIVI_COURS.md).
+Pour plus d'informations sur les concepts implémentés, consultez le fichier [SUIVI_COURS.md](../../SUIVI_COURS.md) à la racine du projet.
 
 ## 🔗 Ressources
 
