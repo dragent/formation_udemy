@@ -1,10 +1,10 @@
 import React from 'react'
 import Link from 'next/link'
-import { getPost } from '@/app/lib/serverActions'
 
 async function page({ params }) {
   const { id } = await params;
-  const post = await getPost(id)
+  const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`);
+  const post = await res.json();
 
   return (
     <main className="mt-12">

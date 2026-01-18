@@ -1,10 +1,10 @@
 import React from 'react'
 import Link from 'next/link'
-import { getPosts } from '@/app/lib/serverActions'
 
 async function page({  }) {
+  const res = await fetch('https://jsonplaceholder.typicode.com/posts');
+  const posts = await res.json();
 
-  const posts = await getPosts()
   return (
     <main>
       <h1 className="text-3xl font-bold underline">Blog</h1>
