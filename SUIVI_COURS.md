@@ -319,6 +319,80 @@
 
 ---
 
+---
+
+## 📖 Partie 3 : Styles et Optimisation 🚧 EN COURS
+
+---
+
+## ✅ Avancement
+
+### 1. Configuration Initiale
+- [x] Initialisation du projet Next.js avec App Router
+- [x] Configuration Tailwind CSS 4
+- [x] Configuration ESLint
+- [x] Structure de base du projet avec dossier `src/app/`
+
+### 2. Optimisation des Polices
+- [x] Configuration de Google Fonts avec `next/font/google`
+  - Import de Geist et Geist_Mono
+  - Import de Inter avec configuration `display: "swap"`
+  - Variables CSS pour les polices (`--font-geist-sans`, `--font-geist-mono`, `--font-inter`)
+  - Application des polices via className dans le layout
+
+### 3. Configuration CSS et Thème
+- [x] Configuration Tailwind CSS 4 avec `@import "tailwindcss"`
+- [x] Variables CSS personnalisées dans `:root`
+  - Variables `--background` et `--foreground` pour les couleurs
+- [x] Configuration `@theme inline` pour Tailwind CSS 4
+  - Mapping des variables CSS vers les couleurs Tailwind
+  - Configuration des polices dans le thème
+- [x] Support du Dark Mode avec `prefers-color-scheme`
+  - Media query pour le mode sombre
+  - Variables CSS adaptées pour le dark mode
+
+### 4. Pages Principales
+- [x] Page d'accueil (`/`)
+  - Utilisation des classes Tailwind avec support dark mode
+  - Application des polices configurées
+
+### 5. Concepts Implémentés
+- [x] **Optimisation des polices** : Utilisation de `next/font/google` pour optimiser le chargement des polices
+- [x] **Variables CSS** : Création et utilisation de variables CSS personnalisées
+- [x] **Tailwind CSS 4** : Configuration avancée avec `@theme inline`
+- [x] **Dark Mode** : Support automatique via `prefers-color-scheme`
+- [x] **Optimisation des performances** : Chargement optimisé des polices avec `display: "swap"`
+
+### 6. Structure des Routes
+```
+/ → Page d'accueil avec styles optimisés
+```
+
+---
+
+## 📝 Notes Techniques - Partie 3
+- **next/font/google** : Optimisation automatique des polices Google Fonts avec préchargement et optimisation des sous-ensembles
+- **Variables CSS** : Utilisation de variables CSS pour centraliser la gestion des couleurs et polices
+- **@theme inline** : Directive Tailwind CSS 4 pour définir le thème directement dans le CSS
+- **prefers-color-scheme** : Support natif du dark mode basé sur les préférences système
+- **display: swap** : Stratégie de chargement des polices pour améliorer les performances (évite le FOIT)
+- **Optimisation des performances** : Réduction du temps de chargement grâce à l'optimisation des polices
+
+---
+
+## 🎓 Statut de la Partie 3
+🚧 **EN COURS** - Les concepts de styles et d'optimisation sont en cours d'apprentissage.
+
+### Fonctionnalités Complétées
+- ✅ Configuration Tailwind CSS 4
+- ✅ Optimisation des polices avec next/font/google
+- ✅ Variables CSS personnalisées
+- ✅ Configuration @theme inline
+- ✅ Support du dark mode avec prefers-color-scheme
+- ✅ Application des polices dans les composants
+
+---
+
 ## 📅 Dernière Mise à Jour
 Date : 19/01/2026
 - Déplacement du suivi de cours à la racine du projet
@@ -331,4 +405,8 @@ Date : 19/01/2026
 - Création de la page Settings avec gestion du thème
 - Configuration des alias TypeScript (`@/*`)
 - **Partie 2 marquée comme TERMINÉE**
+- Début de la Partie 3 : Styles et Optimisation
+- Configuration de Google Fonts avec next/font/google
+- Configuration Tailwind CSS 4 avec @theme inline
+- Support du dark mode avec prefers-color-scheme
 - Traduction des messages de commit en anglais

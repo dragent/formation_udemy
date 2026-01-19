@@ -8,6 +8,7 @@ Ce dépôt contient tous les projets de la formation Next.js sur Udemy, organis�
 formation-nextjs/
 ├── 1.app-router/              # Partie 1 : Next.js App Router ✅ TERMINÉE
 ├── 2.composants-et-donnes/    # Partie 2 : Composants et Données ✅ TERMINÉE
+├── 3.styles-et-optimisation/  # Partie 3 : Styles et Optimisation 🚧 EN COURS
 └── [autres parties]           # Parties suivantes à venir...
 ```
 
@@ -57,6 +58,26 @@ npm run dev
 ```
 
 Consultez le [README.md](./2.composants-et-donnes/README.md) et le [SUIVI_COURS.md](./SUIVI_COURS.md) pour plus de détails.
+
+## 📚 Partie 3 : Styles et Optimisation 🚧 EN COURS
+
+Le projet de la partie 3 se trouve dans le dossier `3.styles-et-optimisation/`. Cette partie couvre l'optimisation des polices avec `next/font/google`, la configuration avancée de Tailwind CSS 4 avec `@theme inline`, et le support du dark mode avec `prefers-color-scheme`.
+
+### Fonctionnalités principales
+- ✅ Optimisation des polices avec next/font/google
+- ✅ Configuration Tailwind CSS 4 avec @theme inline
+- ✅ Variables CSS personnalisées
+- ✅ Support du dark mode avec prefers-color-scheme
+- ✅ Optimisation des performances (display: swap)
+
+Pour démarrer ce projet :
+```bash
+cd 3.styles-et-optimisation
+npm install
+npm run dev
+```
+
+Consultez le [README.md](./3.styles-et-optimisation/README.md) et le [SUIVI_COURS.md](./SUIVI_COURS.md) pour plus de détails.
 
 ## 📋 Suivi de Cours
 
