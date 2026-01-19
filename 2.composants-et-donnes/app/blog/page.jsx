@@ -13,9 +13,9 @@ async function page({  }) {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {posts.map((post) => (
           <div key={post.id}>
-            <Link href={`/blog/${post.id}`} key={post.id} className="block p-4 bg-white shadow-lg rounded-lg hover:bg-gray-100 transition duration-200"> 
+            <Link href={`/blog/${post.id}`} key={post.id} className="block p-4 bg-white shadow-lg rounded-lg hover:bg-gray-100  dark:bg-gray-700 dark:hover:bg-gray-900 transition duration-200"> 
               <h2 className="text-xl font-semibold">{post.title}</h2>
-              <p className="text-gray-600">{post.body.slice(0, 100)}...</p>
+              <p className="text-gray-600  dark:text-gray-300   dark:hover:text-gray-100 ">{post.body.slice(0, 100)}...</p>
             </Link>
           </div>
         ))}

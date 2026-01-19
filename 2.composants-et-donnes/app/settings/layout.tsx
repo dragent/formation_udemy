@@ -1,6 +1,6 @@
-import "./globals.css";
-import SwitchThemeBtn from "./component/SwitchThemeBtn";
-import { DarkModeProvider } from "./context/DarkModeContext";
+import "@/globals.css";
+import SwitchThemeBtn from "@/component/SwitchThemeBtn";
+import { DarkModeProvider } from "@/context/DarkModeContext";
 
 export default function RootLayout({
   children,
@@ -12,8 +12,8 @@ export default function RootLayout({
       <body className="p-20 dark:bg-slate-900 dark:text-slate-200">
         <DarkModeProvider>
           <SwitchThemeBtn />
+          {children}
         </DarkModeProvider>
-        {children}
       </body>
     </html>
   );

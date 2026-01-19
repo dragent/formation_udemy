@@ -141,7 +141,7 @@
 
 ---
 
-## 📖 Partie 2 : Composants et Données 🚧 EN COURS
+## 📖 Partie 2 : Composants et Données ✅ TERMINÉE
 
 ---
 
@@ -180,6 +180,10 @@
   - Utilisation de Server Actions pour récupérer un post par ID
   - Affichage du titre et du contenu complet
   - Lien de retour vers la liste des blogs
+- [x] Page Settings (`/settings`)
+  - Page de paramètres avec gestion du thème
+  - Utilisation du Context API pour accéder au dark mode
+  - Bouton pour basculer entre light et dark mode
 
 ### 3. Concepts Implémentés
 - [x] **Composants Client** : Utilisation de `"use client"` pour les composants nécessitant des hooks React
@@ -192,17 +196,22 @@
 - [x] **API Routes** : Création de routes API pour exposer des endpoints
 - [x] **Middleware** : Interception et manipulation des requêtes avant le rendu
 - [x] **State Management** : Concepts et pratiques de gestion d'état global
+- [x] **Context API** : Utilisation de React Context pour partager l'état global (DarkModeContext)
+- [x] **Dark Mode** : Implémentation du mode sombre avec Context API et Tailwind CSS 4
 - [x] **TypeScript** : Utilisation de TypeScript pour le typage statique
+- [x] **Alias de chemins** : Configuration de `@/*` pour les imports absolus
 - [x] **Styling** : Tailwind CSS 4 pour le design moderne et responsive
 - [x] **Navigation** : Utilisation de Next.js Link pour la navigation côté client
+- [x] **Layouts imbriqués** : Organisation des layouts avec layouts spécifiques par route
 
 ### 4. Structure des Routes
 ```
 /          → Page d'accueil
 /form      → Page avec formulaire contrôlé (Client Component)
 /image     → Page avec fetch d'image (Server Component + Server Actions)
-/blog      → Page blog (liste des articles, Server Component + Server Actions)
+/blog      → Page blog (liste des articles, Server Component + API Route locale)
 /blog/[id] → Article de blog spécifique (route dynamique, Server Component + Server Actions)
+/settings  → Page de paramètres avec gestion du thème (Client Component + Context API)
 /api/post  → Route API pour récupérer des données (GET)
 ```
 
@@ -235,6 +244,33 @@
   - Implémentation pratique d'un state manager
   - Intégration avec Next.js et React
 
+### 9. Context API et Dark Mode
+- [x] Création du Context (`app/context/DarkModeContext.js`)
+  - Utilisation de `createContext` pour créer un contexte React
+  - Provider avec état `theme` et fonction `toggleTheme`
+  - Gestion de la classe `dark` sur l'élément HTML via `useEffect`
+- [x] Composant SwitchThemeBtn (`app/component/SwitchThemeBtn.jsx`)
+  - Utilisation de `useContext` pour accéder au DarkModeContext
+  - Bouton fixe pour basculer entre light et dark mode
+- [x] Configuration Tailwind CSS 4 pour Dark Mode
+  - Utilisation de `@custom-variant dark` dans `globals.css`
+  - Configuration du dark mode basé sur la classe `.dark`
+  - Support des classes `dark:*` dans les composants
+- [x] Intégration dans les layouts
+  - DarkModeProvider dans le layout racine
+  - Layout spécifique pour `/settings` avec DarkModeProvider
+  - Styles dark mode appliqués au body avec `dark:bg-slate-900 dark:text-slate-200`
+
+### 10. Configuration TypeScript
+- [x] Configuration des alias de chemins (`tsconfig.json`)
+  - Alias `@/*` pointant vers `./app/*`
+  - Imports absolus avec `@/component/`, `@/context/`, etc.
+  - Amélioration de la lisibilité et maintenabilité du code
+- [x] Configuration Tailwind CSS 4 (`tailwind.config.ts`)
+  - Configuration du dark mode avec `darkMode: "class"`
+  - Extension du thème avec couleurs personnalisées
+  - Support des variants dark mode
+
 ---
 
 ## 📝 Notes Techniques - Partie 2
@@ -248,15 +284,20 @@
 - **API Routes** : Création de routes API dans `app/api/` pour exposer des endpoints REST avec méthodes HTTP (GET, POST, etc.)
 - **Middleware** : Fonction exécutée avant chaque requête pour intercepter, rediriger ou modifier les requêtes et réponses
 - **State Management** : Concepts de gestion d'état global pour partager des données entre composants (alternatives à useState pour l'état global)
+- **Context API** : Utilisation de React Context (`createContext`, `Provider`, `useContext`) pour partager l'état global entre composants sans prop drilling
+- **Dark Mode** : Implémentation complète du mode sombre avec Context API, gestion de la classe `dark` sur l'élément HTML, et configuration Tailwind CSS 4 avec `@custom-variant`
+- **Hooks React avancés** : Utilisation de `useContext` pour accéder aux valeurs du contexte, `useEffect` pour les effets de bord (ajout/suppression de classe)
+- **Alias de chemins** : Configuration TypeScript pour les imports absolus avec `@/*` améliorant la lisibilité et évitant les chemins relatifs complexes
+- **Layouts imbriqués** : Organisation des layouts avec layouts spécifiques par route (ex: `/settings/layout.tsx`) pour encapsuler la logique de contexte
 - **Réutilisabilité** : Organisation du code avec Server Actions dans un module dédié (`lib/serverActions.jsx`)
 - **TypeScript** : Typage statique pour améliorer la maintenabilité du code
-- **Styling** : Tailwind CSS 4 pour un styling moderne et responsive avec grilles adaptatives
+- **Styling** : Tailwind CSS 4 pour un styling moderne et responsive avec grilles adaptatives et support du dark mode
 - **Navigation** : Utilisation de Next.js Link pour la navigation optimisée côté client
 
 ---
 
 ## 🎓 Statut de la Partie 2
-🚧 **EN COURS** - Les concepts fondamentaux des composants et de la gestion des données sont en cours d'apprentissage.
+✅ **PARTIE 2 TERMINÉE** - Toutes les fonctionnalités principales des composants, de la gestion des données et du state management ont été implémentées.
 
 ### Fonctionnalités Complétées
 - ✅ Configuration TypeScript et structure de base
@@ -268,9 +309,13 @@
 - ✅ Fetch d'API dans les Server Components et Server Actions
 - ✅ API Routes pour exposer des endpoints
 - ✅ Middleware pour intercepter et manipuler les requêtes
-- ⏰ Concepts de State Management (parties 1 et 2)
+- ✅ Context API pour la gestion d'état global
+- ✅ Dark Mode avec Context API et Tailwind CSS 4
+- ✅ State Management (chapitres 23-24 complétés)
+- ✅ Layouts imbriqués avec Context Providers
+- ✅ Configuration des alias TypeScript (`@/*`)
 - ✅ Navigation avec Next.js Link
-- ✅ Styling avec Tailwind CSS (grilles responsive)
+- ✅ Styling avec Tailwind CSS (grilles responsive + dark mode)
 
 ---
 
@@ -281,4 +326,9 @@ Date : 19/01/2026
 - Ajout des Server Actions et routes dynamiques pour le blog
 - Ajout des API Routes et Middleware
 - Complétion des chapitres 23 et 24 sur les state managers (parties 1 et 2)
+- Implémentation du Context API avec DarkModeContext
+- Configuration du Dark Mode avec Tailwind CSS 4 (`@custom-variant`)
+- Création de la page Settings avec gestion du thème
+- Configuration des alias TypeScript (`@/*`)
+- **Partie 2 marquée comme TERMINÉE**
 - Traduction des messages de commit en anglais
