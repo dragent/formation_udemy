@@ -2,7 +2,8 @@ import React from 'react'
 import Link from 'next/link'
 
 async function page({  }) {
-  const res = await fetch('https://jsonplaceholder.typicode.com/posts');
+  // const res = await fetch('https://jsonplaceholder.typicode.com/posts');
+  const res = await fetch('http://localhost:3000/api/post');
   const posts = await res.json();
 
   return (
