@@ -355,17 +355,52 @@
 - [x] Page d'accueil (`/`)
   - Utilisation des classes Tailwind avec support dark mode
   - Application des polices configurées
+  - Intégration du composant Card
+- [x] Page Pricing (`/pricing`)
+  - Utilisation de CSS Modules avec `pricing.module.css`
+  - Démonstration de l'approche CSS Modules
 
-### 5. Concepts Implémentés
+### 5. Composants et Styles
+- [x] Composant Card (`src/components/Card/Card.jsx`)
+  - Utilisation de SCSS avec import global
+  - Import direct : `import './Card.scss'`
+  - Utilisation des classes directement : `className="Card"`
+  - Démonstration de l'approche SCSS globale
+- [x] Page Pricing (`src/app/pricing/page.jsx`)
+  - Utilisation de CSS Modules avec `pricing.module.css`
+  - Import avec objet styles : `import styles from './pricing.module.css'`
+  - Utilisation via objet : `className={styles.title}`
+  - Démonstration de l'approche CSS Modules (scoped styles)
+
+### 6. Concepts Implémentés
 - [x] **Optimisation des polices** : Utilisation de `next/font/google` pour optimiser le chargement des polices
 - [x] **Variables CSS** : Création et utilisation de variables CSS personnalisées
 - [x] **Tailwind CSS 4** : Configuration avancée avec `@theme inline`
+- [x] **SCSS** : Utilisation de SCSS avec imports globaux pour les styles de composants
+- [x] **CSS Modules** : Utilisation de CSS Modules (`.module.css`) pour les styles scoped
 - [x] **Dark Mode** : Support automatique via `prefers-color-scheme`
 - [x] **Optimisation des performances** : Chargement optimisé des polices avec `display: "swap"`
 
-### 6. Structure des Routes
+### 7. Structure des Routes
 ```
-/ → Page d'accueil avec styles optimisés
+/         → Page d'accueil avec styles optimisés
+/pricing  → Page pricing avec CSS Modules
+```
+
+### 8. Structure des Composants
+```
+src/
+├── app/
+│   ├── layout.js
+│   ├── page.js
+│   ├── pricing/
+│   │   ├── page.jsx
+│   │   └── pricing.module.css
+│   └── globals.css
+└── components/
+    └── Card/
+        ├── Card.jsx
+        └── Card.scss
 ```
 
 ---
@@ -374,6 +409,11 @@
 - **next/font/google** : Optimisation automatique des polices Google Fonts avec préchargement et optimisation des sous-ensembles
 - **Variables CSS** : Utilisation de variables CSS pour centraliser la gestion des couleurs et polices
 - **@theme inline** : Directive Tailwind CSS 4 pour définir le thème directement dans le CSS
+- **SCSS avec imports globaux** : Utilisation de fichiers `.scss` importés directement (`import './Card.scss'`) pour des styles globaux, les classes sont utilisées directement comme strings (`className="Card"`)
+- **CSS Modules** : Utilisation de fichiers `.module.css` ou `.module.scss` pour des styles scoped, importés avec un objet (`import styles from './pricing.module.css'`) et utilisés via l'objet (`className={styles.title}`)
+- **Différence SCSS global vs CSS Modules** : 
+  - SCSS global : styles disponibles partout, risque de conflits de noms
+  - CSS Modules : styles isolés au composant, évite les conflits, génère des noms de classes uniques
 - **prefers-color-scheme** : Support natif du dark mode basé sur les préférences système
 - **display: swap** : Stratégie de chargement des polices pour améliorer les performances (évite le FOIT)
 - **Optimisation des performances** : Réduction du temps de chargement grâce à l'optimisation des polices
@@ -390,6 +430,9 @@
 - ✅ Configuration @theme inline
 - ✅ Support du dark mode avec prefers-color-scheme
 - ✅ Application des polices dans les composants
+- ✅ Composant Card avec SCSS (import global)
+- ✅ Page Pricing avec CSS Modules
+- ✅ Démonstration des deux approches de styling (SCSS global et CSS Modules)
 
 ---
 
@@ -409,4 +452,7 @@ Date : 19/01/2026
 - Configuration de Google Fonts avec next/font/google
 - Configuration Tailwind CSS 4 avec @theme inline
 - Support du dark mode avec prefers-color-scheme
+- Création du composant Card avec SCSS (import global)
+- Création de la page Pricing avec CSS Modules
+- Démonstration des deux approches de styling (SCSS global vs CSS Modules)
 - Traduction des messages de commit en anglais

@@ -21,11 +21,21 @@ Démontre les techniques d'optimisation des polices, la configuration avancée d
 - ✅ Page d'accueil (`/`)
   - Styles optimisés avec Tailwind CSS 4
   - Support du dark mode
+  - Intégration du composant Card
+- ✅ Page Pricing (`/pricing`)
+  - Utilisation de CSS Modules pour les styles scoped
+
+### Composants
+- ✅ Composant Card (`src/components/Card/`)
+  - Utilisation de SCSS avec import global
+  - Démonstration de l'approche SCSS globale
 
 ### Concepts Implémentés
 - **Optimisation des polices** : Utilisation de `next/font/google` pour optimiser le chargement des polices Google Fonts
 - **Variables CSS** : Création et utilisation de variables CSS personnalisées pour les couleurs et polices
 - **Tailwind CSS 4** : Configuration avancée avec `@theme inline` pour définir le thème directement dans le CSS
+- **SCSS** : Utilisation de SCSS avec imports globaux (`import './Card.scss'`) pour les styles de composants
+- **CSS Modules** : Utilisation de CSS Modules (`.module.css`) pour les styles scoped et isolés
 - **Dark Mode** : Support automatique via `prefers-color-scheme` media query
 - **Performance** : Optimisation du chargement des polices avec `display: "swap"` pour éviter le FOIT (Flash of Invisible Text)
 
@@ -63,10 +73,17 @@ npm start
 
 ```
 src/
-└── app/
-    ├── layout.js      # Layout racine avec configuration des polices
-    ├── page.js        # Page d'accueil
-    └── globals.css    # Styles globaux avec configuration Tailwind CSS 4
+├── app/
+│   ├── layout.js          # Layout racine avec configuration des polices
+│   ├── page.js            # Page d'accueil
+│   ├── pricing/
+│   │   ├── page.jsx       # Page pricing avec CSS Modules
+│   │   └── pricing.module.css  # Styles CSS Modules
+│   └── globals.css        # Styles globaux avec configuration Tailwind CSS 4
+└── components/
+    └── Card/
+        ├── Card.jsx       # Composant Card
+        └── Card.scss      # Styles SCSS globaux
 ```
 
 ## 🔑 Concepts Clés
@@ -128,6 +145,36 @@ Le dark mode est géré automatiquement via les préférences système avec `pre
   }
 }
 ```
+
+### SCSS avec Import Global
+
+Les fichiers SCSS peuvent être importés globalement pour des styles partagés.
+
+**Exemple** (`src/components/Card/Card.jsx`) :
+```javascript
+import './Card.scss'
+
+function Card() {
+  return <div className="Card">...</div>
+}
+```
+
+Les classes sont utilisées directement comme strings, et les styles sont disponibles globalement.
+
+### CSS Modules
+
+Les CSS Modules permettent d'isoler les styles au niveau du composant.
+
+**Exemple** (`src/app/pricing/page.jsx`) :
+```javascript
+import styles from './pricing.module.css'
+
+function Pricing() {
+  return <h1 className={styles.title}>Pricing</h1>
+}
+```
+
+Les fichiers `.module.css` génèrent des noms de classes uniques pour éviter les conflits.
 
 ## 📚 Documentation
 
