@@ -189,6 +189,9 @@
 - [x] **Server Actions** : Création de fonctions serveur avec `"use server"` pour la récupération de données
 - [x] **Routes dynamiques** : Implémentation de routes avec paramètres `[id]`
 - [x] **Fetch d'API** : Intégration avec JSONPlaceholder pour récupérer des données
+- [x] **API Routes** : Création de routes API pour exposer des endpoints
+- [x] **Middleware** : Interception et manipulation des requêtes avant le rendu
+- [x] **State Management** : Concepts et pratiques de gestion d'état global
 - [x] **TypeScript** : Utilisation de TypeScript pour le typage statique
 - [x] **Styling** : Tailwind CSS 4 pour le design moderne et responsive
 - [x] **Navigation** : Utilisation de Next.js Link pour la navigation côté client
@@ -200,6 +203,7 @@
 /image     → Page avec fetch d'image (Server Component + Server Actions)
 /blog      → Page blog (liste des articles, Server Component + Server Actions)
 /blog/[id] → Article de blog spécifique (route dynamique, Server Component + Server Actions)
+/api/post  → Route API pour récupérer des données (GET)
 ```
 
 ### 5. Server Actions
@@ -208,6 +212,28 @@
   - Fonction `getPosts()` : Récupération de tous les posts
   - Fonction `getPost(id)` : Récupération d'un post spécifique par ID
   - Utilisation de la directive `"use server"` pour marquer les Server Actions
+
+### 6. API Routes
+- [x] Création de route API (`app/api/post/route.js`)
+  - Route GET pour récupérer des données
+  - Retour de données JSON avec headers appropriés
+  - Utilisation de NextResponse pour les réponses API
+
+### 7. Middleware
+- [x] Création du middleware (`middleware.js`)
+  - Interception des requêtes avant le rendu
+  - Redirection conditionnelle (ex: `/private` → `/`)
+  - Utilisation de `NextResponse` pour manipuler les requêtes
+
+### 8. State Management
+- [x] **Chapitre 23 : Utiliser un state manager partie 1** (7 min)
+  - Introduction aux concepts de state management
+  - Comparaison entre état local et état global
+  - Présentation des différentes solutions de state management
+- [x] **Chapitre 24 : Utiliser un state manager partie 2** (13 min)
+  - Approfondissement des concepts de state management
+  - Implémentation pratique d'un state manager
+  - Intégration avec Next.js et React
 
 ---
 
@@ -219,6 +245,9 @@
 - **Server Actions** : Fonctions serveur marquées avec `"use server"` pour centraliser la logique de récupération de données
 - **Routes dynamiques** : Implémentation de routes avec paramètres dynamiques `[id]` pour les pages de détail
 - **Fetch API** : Récupération de données depuis des APIs externes via Server Actions ou directement dans les Server Components
+- **API Routes** : Création de routes API dans `app/api/` pour exposer des endpoints REST avec méthodes HTTP (GET, POST, etc.)
+- **Middleware** : Fonction exécutée avant chaque requête pour intercepter, rediriger ou modifier les requêtes et réponses
+- **State Management** : Concepts de gestion d'état global pour partager des données entre composants (alternatives à useState pour l'état global)
 - **Réutilisabilité** : Organisation du code avec Server Actions dans un module dédié (`lib/serverActions.jsx`)
 - **TypeScript** : Typage statique pour améliorer la maintenabilité du code
 - **Styling** : Tailwind CSS 4 pour un styling moderne et responsive avec grilles adaptatives
@@ -237,14 +266,19 @@
 - ✅ Server Actions pour la récupération de données
 - ✅ Routes dynamiques avec paramètres
 - ✅ Fetch d'API dans les Server Components et Server Actions
+- ✅ API Routes pour exposer des endpoints
+- ✅ Middleware pour intercepter et manipuler les requêtes
+- ⏰ Concepts de State Management (parties 1 et 2)
 - ✅ Navigation avec Next.js Link
 - ✅ Styling avec Tailwind CSS (grilles responsive)
 
 ---
 
 ## 📅 Dernière Mise à Jour
-Date : 18/01/2026
+Date : 19/01/2026
 - Déplacement du suivi de cours à la racine du projet
 - Mise à jour de la Partie 2 avec les fonctionnalités implémentées
 - Ajout des Server Actions et routes dynamiques pour le blog
+- Ajout des API Routes et Middleware
+- Complétion des chapitres 23 et 24 sur les state managers (parties 1 et 2)
 - Traduction des messages de commit en anglais
