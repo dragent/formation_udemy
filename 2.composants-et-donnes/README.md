@@ -20,9 +20,15 @@ Démontre les concepts fondamentaux des composants React dans Next.js, la gestio
 ### Pages et Routes
 - ✅ Page d'accueil (`/`)
 - ✅ Page Form avec input contrôlé (`/form`)
+  - Intégration avec Server Actions pour tester la récupération de données
 - ✅ Page Image avec fetch d'API (`/image`)
 - ✅ Page Blog avec liste des articles (`/blog`)
+  - Utilisation de l'API locale (`/api/post`) pour récupérer les données
 - ✅ Page Blog dynamique avec article spécifique (`/blog/[id]`)
+- ✅ Route API (`/api/post`)
+  - Endpoint GET pour récupérer des données de posts
+- ✅ Middleware (`middleware.js`)
+  - Interception des requêtes et redirection conditionnelle
 
 ### Concepts Implémentés
 - **Composants Client** : Utilisation de `"use client"` pour les composants nécessitant des hooks React
@@ -31,7 +37,10 @@ Démontre les concepts fondamentaux des composants React dans Next.js, la gestio
 - **Composants Server** : Utilisation de composants async pour le chargement de données
 - **Server Actions** : Fonctions serveur avec `"use server"` pour centraliser la logique de récupération de données
 - **Routes dynamiques** : Implémentation de routes avec paramètres `[id]` pour les pages de détail
-- **Fetch d'API** : Intégration avec JSONPlaceholder pour récupérer des données
+- **Fetch d'API** : Intégration avec JSONPlaceholder et API locale pour récupérer des données
+- **API Routes** : Création de routes API dans `app/api/` pour exposer des endpoints REST
+- **Middleware** : Interception et manipulation des requêtes avant le rendu
+- **State Management** : Concepts de gestion d'état global (chapitres 23-24)
 - **Navigation** : Utilisation de Next.js Link pour la navigation optimisée
 - **TypeScript** : Typage statique pour améliorer la maintenabilité
 
@@ -72,15 +81,20 @@ app/
 ├── layout.tsx        # Layout racine avec configuration de base
 ├── page.tsx          # Page d'accueil
 ├── form/
-│   └── page.jsx      # Page avec formulaire contrôlé (Client Component)
+│   └── page.jsx      # Page avec formulaire contrôlé (Client Component + Server Actions)
 ├── image/
 │   └── page.jsx      # Page avec fetch d'image (Server Component + Server Actions)
 ├── blog/
-│   ├── page.jsx      # Liste des articles (Server Component + Server Actions)
+│   ├── page.jsx      # Liste des articles (Server Component + API Route locale)
 │   └── [id]/
 │       └── page.jsx  # Article spécifique (route dynamique, Server Component)
+├── api/
+│   └── post/
+│       └── route.js   # Route API GET pour récupérer des posts
 └── lib/
     └── serverActions.jsx  # Server Actions pour récupération de données
+
+middleware.js         # Middleware pour interception des requêtes
 ```
 
 ## 🔑 Concepts Clés
@@ -92,6 +106,7 @@ Les composants client utilisent la directive `"use client"` et permettent d'util
 - Utilisation de `useState` pour gérer l'état de l'input
 - Input contrôlé avec `value` et `onChange`
 - Affichage en temps réel de la valeur saisie
+- Bouton pour tester l'appel de Server Actions (`getPost`)
 
 ### Composants Server
 Les composants serveur sont par défaut dans Next.js et peuvent être async pour charger des données.
@@ -112,7 +127,7 @@ Les Server Actions sont des fonctions serveur marquées avec `"use server"` qui 
 - Réutilisables dans plusieurs composants
 
 **Exemple d'utilisation** (`/blog`) :
-- Utilisation de `getPosts()` dans un Server Component
+- Utilisation de l'API locale `/api/post` pour récupérer les données
 - Affichage en grille responsive avec Tailwind CSS
 - Navigation vers les articles individuels avec Next.js Link
 
@@ -124,6 +139,44 @@ Les routes dynamiques permettent de créer des pages avec des paramètres variab
 - Utilisation de `getPost(id)` pour récupérer un article spécifique
 - Affichage du contenu complet de l'article
 - Lien de retour vers la liste des blogs
+
+### API Routes
+Les API Routes permettent de créer des endpoints REST dans Next.js en créant des fichiers `route.js` dans le dossier `app/api/`.
+
+**Exemple** (`app/api/post/route.js`) :
+- Export de fonctions nommées correspondant aux méthodes HTTP (GET, POST, PUT, DELETE, etc.)
+- Retour de réponses JSON avec les headers appropriés
+- Utilisation de `Response` ou `NextResponse` pour les réponses
+
+**Utilisation** :
+- La page `/blog` utilise maintenant l'endpoint local `/api/post` au lieu d'une API externe
+- Permet de tester et développer des APIs personnalisées
+
+### Middleware
+Le middleware Next.js permet d'intercepter et de manipuler les requêtes avant qu'elles n'atteignent les routes.
+
+**Exemple** (`middleware.js`) :
+- Fonction `middleware` exportée à la racine du projet
+- Interception de toutes les requêtes entrantes
+- Redirection conditionnelle (ex: `/private` → `/`)
+- Utilisation de `NextResponse` pour manipuler les requêtes et réponses
+
+**Cas d'usage** :
+- Authentification et autorisation
+- Redirection de routes
+- Modification des headers
+- Logging et monitoring
+
+### State Management
+Concepts de gestion d'état global pour partager des données entre composants.
+
+**Chapitres couverts** :
+- **Partie 1** : Introduction aux concepts de state management, comparaison entre état local et état global
+- **Partie 2** : Approfondissement des concepts, implémentation pratique, intégration avec Next.js et React
+
+**Alternatives à `useState`** :
+- Pour l'état local : `useState` reste la solution recommandée
+- Pour l'état global : solutions comme Context API, Zustand, Redux, etc.
 
 ## 📚 Documentation
 
