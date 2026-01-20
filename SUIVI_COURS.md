@@ -418,7 +418,7 @@ src/
 
 ---
 
-## 📖 Partie 4 : Projet Blog Complet ⏸️ EN ATTENTE
+## 📖 Partie 4 : Projet Blog Complet 🚧 EN COURS
 
 ---
 
@@ -651,7 +651,7 @@ src/
 ---
 
 ## 🎓 Statut de la Partie 4
-⏸️ **EN ATTENTE** - Projet blog complet en attente de démarrage.
+🚧 **EN COURS** - Projet blog complet en cours de développement.
 
 ### Progression
 - **Chapitres complétés** : 0/78
