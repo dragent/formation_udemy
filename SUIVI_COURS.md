@@ -403,9 +403,226 @@ src/
         └── Card.scss
 ```
 
+### 9. Chapitres à Compléter - Partie 3
+
+#### A. Optimisation et Métadonnées
+- [ ] **Chapitre 29 : Optimisation des images** (6 min)
+  - Utilisation de `next/image` pour optimiser les images
+  - Configuration des images Next.js
+- [ ] **Chapitre 30 : Gérer les métadonnées** (4 min)
+  - Configuration des métadonnées SEO
+  - Utilisation de `metadata` dans Next.js
+
+#### B. Projet Blog - Mise en Place
+- [ ] **Chapitre 31 : Présentation du projet** (6 min)
+  - Vue d'ensemble du projet blog
+  - Architecture et fonctionnalités prévues
+- [ ] **Chapitre 32 : Mise en place** (5 min)
+  - Initialisation du projet
+  - Configuration de base
+- [ ] **Chapitre 33 : Création du layout et de la technique du "footer toujours en bas"** (17 min)
+  - Structure du layout principal
+  - Technique CSS pour footer sticky
+
+#### C. Pages et Formulaires
+- [ ] **Chapitre 34 : Création de la page d'accueil avec des données statiques** (22 min)
+  - Page d'accueil du blog
+  - Affichage de données statiques
+- [ ] **Chapitre 35 : Création du formulaire de mise en ligne partie 1** (9 min)
+  - Structure du formulaire d'ajout d'article
+- [ ] **Chapitre 36 : Création du formulaire de mise en ligne partie 2** (9 min)
+  - Finalisation du formulaire
+  - Gestion des champs
+
+#### D. Base de Données et Modèles
+- [ ] **Chapitre 37 : Création de la base de données et connexion** (13 min)
+  - Configuration de la base de données
+  - Connexion à MongoDB/PostgreSQL
+- [ ] **Chapitre 38 : Création de la server action "addPost"** (6 min)
+  - Server Action pour ajouter un article
+- [ ] **Chapitre 39 : Création du modèle du premier article** (13 min)
+  - Modèle de données pour les articles
+  - Schéma Mongoose/Prisma
+- [ ] **Chapitre 40 : Afficher un article** (7 min)
+  - Page de détail d'un article
+  - Route dynamique pour les articles
+- [ ] **Chapitre 41 : Créer "getPosts" pour récupérer plusieurs articles** (6 min)
+  - Server Action pour récupérer la liste des articles
+
+#### E. Système de Tags
+- [ ] **Chapitre 42 : Coder l'interface de l'ajout de tags** (17 min)
+  - UI pour ajouter des tags aux articles
+- [ ] **Chapitre 43 : Coder les fonctions liées aux tags** (9 min)
+  - Logique de gestion des tags
+- [ ] **Chapitre 44 : Créer le modèle "tag"** (3 min)
+  - Modèle de données pour les tags
+- [ ] **Chapitre 45 : Création des tags** (15 min)
+  - Implémentation complète du système de tags
+- [ ] **Chapitre 46 : Enrichir getPost et afficher les tags** (6 min)
+  - Affichage des tags sur les articles
+
+#### F. Markdown et Sécurité
+- [ ] **Chapitre 47 : Transformer le Markdown en HTML et l'afficher** (11 min)
+  - Parsing et affichage du Markdown
+  - Bibliothèque de parsing Markdown
+- [ ] **Chapitre 48 : Gérer les attaques XSS** (8 min)
+  - Sécurisation contre les attaques XSS
+  - Sanitization du contenu
+
+#### G. Styling des Articles
+- [ ] **Chapitre 49 : Styliser un article** (3 min)
+  - Styles pour l'affichage des articles
+- [ ] **Chapitre 50 : Utiliser une colorisation syntaxique pour enjoliver le code dans l'article** (11 min)
+  - Syntax highlighting pour les blocs de code
+  - Bibliothèque de colorisation syntaxique
+
+#### H. Gestion des Articles
+- [ ] **Chapitre 51 : Gérer les infos liées à l'ajout d'un article** (19 min)
+  - Gestion complète des métadonnées d'article
+  - Validation et traitement des données
+
+#### I. Authentification - Inscription
+- [ ] **Chapitre 52 : Créer les pages de connexion et d'inscription** (4 min)
+  - Routes pour authentification
+- [ ] **Chapitre 53 : UI de la page d'inscription** (17 min)
+  - Interface utilisateur d'inscription
+- [ ] **Chapitre 54 : Créer le modèle "user"** (4 min)
+  - Modèle de données utilisateur
+- [ ] **Chapitre 55 : Créer la server action register** (10 min)
+  - Server Action pour l'inscription
+- [ ] **Chapitre 56 : Gérer l'envoi du formulaire** (13 min)
+  - Traitement du formulaire d'inscription
+
+#### J. Authentification - Connexion
+- [ ] **Chapitre 57 : Coder l'UI de la page de connexion** (7 min)
+  - Interface utilisateur de connexion
+- [ ] **Chapitre 58 : Comment fonctionne une authentification par session de base de données ?** (5 min)
+  - Explication du système de sessions
+- [ ] **Chapitre 59 : Création du modèle "session"** (3 min)
+  - Modèle de données pour les sessions
+- [ ] **Chapitre 60 : Création de la server action login** (17 min)
+  - Server Action pour la connexion
+- [ ] **Chapitre 61 : Gérer l'envoi du formulaire de connexion** (9 min)
+  - Traitement du formulaire de connexion
+
+#### K. Gestion des Sessions
+- [ ] **Chapitre 62 : Créer la méthode lisant le cookie d'authentification** (6 min)
+  - Lecture et validation des cookies de session
+- [ ] **Chapitre 63 : Affichage conditionnel dans la Navbar** (3 min)
+  - Navigation adaptée selon l'état d'authentification
+- [ ] **Chapitre 64 : Création du dropdown, partie 1** (12 min)
+  - Menu déroulant utilisateur
+- [ ] **Chapitre 65 : Gestion du clic en dehors du dropdown** (5 min)
+  - Fermeture du dropdown au clic extérieur
+- [ ] **Chapitre 66 : Mise en place du "sign out"** (7 min)
+  - Fonctionnalité de déconnexion
+- [ ] **Chapitre 67 : Gérer la potentielle redirection** (8 min)
+  - Redirection après authentification
+
+#### L. Gestion des Erreurs
+- [ ] **Chapitre 68 : Création de la sous-classe AppError** (9 min)
+  - Classe personnalisée pour les erreurs
+- [ ] **Chapitre 69 : Mieux gérer les erreurs** (9 min)
+  - Système de gestion d'erreurs amélioré
+- [ ] **Chapitre 70 : Gérer les erreurs de l'inscription** (12 min)
+  - Gestion des erreurs d'inscription
+- [ ] **Chapitre 71 : Gérer les erreurs des méthodes serveurs** (11 min)
+  - Gestion d'erreurs dans les Server Actions
+
+#### M. Pages Privées et Upload
+- [ ] **Chapitre 72 : Mise en place des pages privées** (4 min)
+  - Protection des routes privées
+- [ ] **Chapitre 73 : Coder l'interface de mise en ligne de l'image** (11 min)
+  - UI pour upload d'images
+- [ ] **Chapitre 74 : Création du compte BunnyCDN** (9 min)
+  - Configuration du CDN pour les images
+- [ ] **Chapitre 75 : Logique Back-End de la mise en ligne de l'image** (22 min)
+  - Server Action pour upload d'images
+- [ ] **Chapitre 76 : Afficher l'image de l'article et l'auteur** (15 min)
+  - Affichage des images et informations auteur
+
+#### N. Dashboard et Gestion
+- [ ] **Chapitre 77 : Créer le composant réutilisable BlogCard** (8 min)
+  - Composant de carte d'article
+- [ ] **Chapitre 78 : Créer l'interface de la liste du dashboard** (11 min)
+  - Interface du dashboard utilisateur
+- [ ] **Chapitre 79 : Récupérer les posts d'un utilisateur** (5 min)
+  - Server Action pour récupérer les articles de l'utilisateur
+- [ ] **Chapitre 80 : Gérer la suppression d'un post** (21 min)
+  - Fonctionnalité de suppression d'article
+
+#### O. Catégories et Navigation
+- [ ] **Chapitre 81 : Créer une aggregation** (11 min)
+  - Aggregations MongoDB pour les statistiques
+- [ ] **Chapitre 82 : Coder l'UI de la page categories** (10 min)
+  - Page de liste des catégories/tags
+- [ ] **Chapitre 83 : Récupérer les posts par tag** (7 min)
+  - Server Action pour filtrer par tag
+- [ ] **Chapitre 84 : Créer l'interface de la page des posts par tag** (5 min)
+  - Page d'affichage des articles par tag
+- [ ] **Chapitre 85 : Coder l'UI de la page des articles par auteur** (9 min)
+  - Page d'affichage des articles par auteur
+- [ ] **Chapitre 86 : Créer la fonction de récupération des posts par auteur** (13 min)
+  - Server Action pour récupérer les articles d'un auteur
+
+#### P. Édition d'Articles
+- [ ] **Chapitre 87 : UI de la page de mise à jour d'un article** (9 min)
+  - Interface d'édition d'article
+- [ ] **Chapitre 88 : Gérer la validation UX côté front** (13 min)
+  - Validation côté client du formulaire
+- [ ] **Chapitre 89 : Créer la Server Action editPost partie 1** (16 min)
+  - Début de l'implémentation de l'édition
+- [ ] **Chapitre 90 : Créer la Server Action editPost partie 2** (9 min)
+  - Suite de l'implémentation
+- [ ] **Chapitre 91 : Créer la Server Action editPost partie 3** (6 min)
+  - Finalisation de l'édition
+- [ ] **Chapitre 92 : Créer la Server Action editPost partie 4** (9 min)
+  - Gestion des tags dans l'édition
+- [ ] **Chapitre 93 : Créer la Server Action editPost partie 5** (10 min)
+  - Finalisation complète de l'édition
+
+#### Q. API et Middleware
+- [ ] **Chapitre 94 : Créer une route d'API de vérification d'authentification** (12 min)
+  - Route API pour vérifier l'authentification
+- [ ] **Chapitre 95 : Création d'un middleware next** (16 min)
+  - Middleware pour protéger les routes
+- [ ] **Chapitre 96 : Créer un contexte pour mieux gérer l'auth de notre app** (12 min)
+  - Context API pour l'authentification
+
+#### R. Contexte et État Client
+- [ ] **Chapitre 97 : Afficher l'état de l'auth côté client** (19 min)
+  - Synchronisation de l'état d'authentification
+- [ ] **Chapitre 98 : Gérer quelques erreurs** (4 min)
+  - Corrections finales
+
+#### S. Optimisation et Cache
+- [ ] **Chapitre 99 : Coup du gueule sur le caching, c'est très important** (5 min)
+  - Explication de l'importance du cache
+- [ ] **Chapitre 100 : Stratégie de cache des pages qui affichent des listes d'articles** (7 min)
+  - Configuration du cache pour les listes
+- [ ] **Chapitre 101 : Potentielle erreur avec notFound()** (4 min)
+  - Gestion des erreurs 404
+- [ ] **Chapitre 102 : Gérer le cache des pages d'article partie 1** (5 min)
+  - Cache pour les pages d'article
+- [ ] **Chapitre 103 : Gérer le cache des pages d'article partie 2** (8 min)
+  - Finalisation du cache
+
+#### T. Finalisation
+- [ ] **Chapitre 104 : Afficher un loader entre les pages** (4 min)
+  - Indicateur de chargement
+- [ ] **Chapitre 105 : Derniers ajustements et bravo !** (3 min)
+  - Finalisation du projet
+- [ ] **Chapitre 106 : Étapes de mise en ligne d'un projet** (5 min)
+  - Déploiement et mise en production
+
+**Total des chapitres restants : 78 chapitres**
+**Durée totale estimée : ~12 heures**
+
 ---
 
 ## 📝 Notes Techniques - Partie 3
+
+### Concepts Déjà Implémentés
 - **next/font/google** : Optimisation automatique des polices Google Fonts avec préchargement et optimisation des sous-ensembles
 - **Variables CSS** : Utilisation de variables CSS pour centraliser la gestion des couleurs et polices
 - **@theme inline** : Directive Tailwind CSS 4 pour définir le thème directement dans le CSS
@@ -417,6 +634,25 @@ src/
 - **prefers-color-scheme** : Support natif du dark mode basé sur les préférences système
 - **display: swap** : Stratégie de chargement des polices pour améliorer les performances (évite le FOIT)
 - **Optimisation des performances** : Réduction du temps de chargement grâce à l'optimisation des polices
+
+### Concepts à Aborder (Chapitres 29-106)
+- **next/image** : Optimisation automatique des images avec lazy loading et redimensionnement
+- **Metadata API** : Gestion des métadonnées SEO et Open Graph
+- **Base de données** : Intégration MongoDB/PostgreSQL avec Mongoose/Prisma
+- **Server Actions** : Actions serveur pour CRUD (Create, Read, Update, Delete)
+- **Modèles de données** : Schémas Mongoose/Prisma pour articles, utilisateurs, tags, sessions
+- **Markdown** : Parsing et affichage de contenu Markdown dans les articles
+- **Sécurité XSS** : Sanitization du contenu utilisateur pour prévenir les attaques
+- **Syntax Highlighting** : Colorisation syntaxique pour les blocs de code
+- **Authentification par session** : Système d'authentification avec cookies et sessions en base de données
+- **Upload d'images** : Intégration avec CDN (BunnyCDN) pour le stockage d'images
+- **Protection de routes** : Middleware et pages privées pour l'authentification
+- **Gestion d'erreurs** : Classes d'erreur personnalisées et gestion centralisée
+- **Aggregations** : Requêtes MongoDB complexes pour statistiques et filtres
+- **Cache Next.js** : Stratégies de cache pour optimiser les performances (revalidate, cache tags)
+- **Context API** : Gestion de l'état d'authentification côté client
+- **API Routes** : Routes API pour vérification d'authentification
+- **Déploiement** : Étapes de mise en production d'un projet Next.js
 
 ---
 
@@ -433,6 +669,12 @@ src/
 - ✅ Composant Card avec SCSS (import global)
 - ✅ Page Pricing avec CSS Modules
 - ✅ Démonstration des deux approches de styling (SCSS global et CSS Modules)
+
+### Progression
+- **Chapitres complétés** : 1-8 (Configuration initiale, polices, CSS, composants)
+- **Chapitres restants** : 29-106 (78 chapitres)
+- **Progression** : ~9% complété
+- **Durée estimée restante** : ~12 heures
 
 ---
 
@@ -455,4 +697,5 @@ Date : 19/01/2026
 - Création du composant Card avec SCSS (import global)
 - Création de la page Pricing avec CSS Modules
 - Démonstration des deux approches de styling (SCSS global vs CSS Modules)
+- Documentation des 78 chapitres restants (29-106) organisés par thèmes
 - Traduction des messages de commit en anglais
