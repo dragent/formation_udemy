@@ -403,9 +403,15 @@ src/
         └── Card.scss
 ```
 
-### 9. Chapitres à Compléter - Partie 3
+---
 
-#### A. Optimisation et Métadonnées
+## 📖 Partie 4 : Projet Blog Complet 🚧 EN COURS
+
+---
+
+## ✅ Avancement
+
+### 1. Optimisation et Métadonnées
 - [ ] **Chapitre 29 : Optimisation des images** (6 min)
   - Utilisation de `next/image` pour optimiser les images
   - Configuration des images Next.js
@@ -615,14 +621,12 @@ src/
 - [ ] **Chapitre 106 : Étapes de mise en ligne d'un projet** (5 min)
   - Déploiement et mise en production
 
-**Total des chapitres restants : 78 chapitres**
+**Total des chapitres : 78 chapitres**
 **Durée totale estimée : ~12 heures**
 
 ---
 
-## 📝 Notes Techniques - Partie 3
-
-### Concepts Déjà Implémentés
+## 📝 Notes Techniques - Partie 4
 - **next/font/google** : Optimisation automatique des polices Google Fonts avec préchargement et optimisation des sous-ensembles
 - **Variables CSS** : Utilisation de variables CSS pour centraliser la gestion des couleurs et polices
 - **@theme inline** : Directive Tailwind CSS 4 pour définir le thème directement dans le CSS
@@ -635,7 +639,6 @@ src/
 - **display: swap** : Stratégie de chargement des polices pour améliorer les performances (évite le FOIT)
 - **Optimisation des performances** : Réduction du temps de chargement grâce à l'optimisation des polices
 
-### Concepts à Aborder (Chapitres 29-106)
 - **next/image** : Optimisation automatique des images avec lazy loading et redimensionnement
 - **Metadata API** : Gestion des métadonnées SEO et Open Graph
 - **Base de données** : Intégration MongoDB/PostgreSQL avec Mongoose/Prisma
@@ -656,8 +659,18 @@ src/
 
 ---
 
+## 🎓 Statut de la Partie 4
+🚧 **EN COURS** - Projet blog complet en cours de développement.
+
+### Progression
+- **Chapitres complétés** : 0/78
+- **Progression** : 0% complété
+- **Durée estimée** : ~12 heures
+
+---
+
 ## 🎓 Statut de la Partie 3
-🚧 **EN COURS** - Les concepts de styles et d'optimisation sont en cours d'apprentissage.
+✅ **PARTIE 3 TERMINÉE** - Les concepts de styles et d'optimisation de base ont été complétés.
 
 ### Fonctionnalités Complétées
 - ✅ Configuration Tailwind CSS 4
@@ -671,10 +684,8 @@ src/
 - ✅ Démonstration des deux approches de styling (SCSS global et CSS Modules)
 
 ### Progression
-- **Chapitres complétés** : 1-8 (Configuration initiale, polices, CSS, composants)
-- **Chapitres restants** : 29-106 (78 chapitres)
-- **Progression** : ~9% complété
-- **Durée estimée restante** : ~12 heures
+- **Chapitres complétés** : 8/8 (Configuration initiale, polices, CSS, composants)
+- **Progression** : 100% complété
 
 ---
 
@@ -698,4 +709,6 @@ Date : 19/01/2026
 - Création de la page Pricing avec CSS Modules
 - Démonstration des deux approches de styling (SCSS global vs CSS Modules)
 - Documentation des 78 chapitres restants (29-106) organisés par thèmes
+- Séparation Partie 3 (Styles et Optimisation) et Partie 4 (Projet Blog Complet)
+- **Partie 3 marquée comme TERMINÉE**
 - Traduction des messages de commit en anglais

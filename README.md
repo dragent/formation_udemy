@@ -8,8 +8,8 @@ Ce dépôt contient tous les projets de la formation Next.js sur Udemy, organis�
 formation-nextjs/
 ├── 1.app-router/              # Partie 1 : Next.js App Router ✅ TERMINÉE
 ├── 2.composants-et-donnes/    # Partie 2 : Composants et Données ✅ TERMINÉE
-├── 3.styles-et-optimisation/  # Partie 3 : Styles et Optimisation 🚧 EN COURS
-└── [autres parties]           # Parties suivantes à venir...
+├── 3.styles-et-optimisation/  # Partie 3 : Styles et Optimisation ✅ TERMINÉE
+└── [partie 4]                 # Partie 4 : Projet Blog Complet 🚧 EN COURS
 ```
 
 ## 📚 Partie 1 : Next.js App Router ✅ TERMINÉE
@@ -59,7 +59,7 @@ npm run dev
 
 Consultez le [README.md](./2.composants-et-donnes/README.md) et le [SUIVI_COURS.md](./SUIVI_COURS.md) pour plus de détails.
 
-## 📚 Partie 3 : Styles et Optimisation 🚧 EN COURS
+## 📚 Partie 3 : Styles et Optimisation ✅ TERMINÉE
 
 Le projet de la partie 3 se trouve dans le dossier `3.styles-et-optimisation/`. Cette partie couvre l'optimisation des polices avec `next/font/google`, la configuration avancée de Tailwind CSS 4 avec `@theme inline`, et le support du dark mode avec `prefers-color-scheme`.
 
@@ -68,6 +68,7 @@ Le projet de la partie 3 se trouve dans le dossier `3.styles-et-optimisation/`. 
 - ✅ Configuration Tailwind CSS 4 avec @theme inline
 - ✅ Variables CSS personnalisées
 - ✅ Support du dark mode avec prefers-color-scheme
+- ✅ SCSS et CSS Modules
 - ✅ Optimisation des performances (display: swap)
 
 Pour démarrer ce projet :
@@ -78,6 +79,26 @@ npm run dev
 ```
 
 Consultez le [README.md](./3.styles-et-optimisation/README.md) et le [SUIVI_COURS.md](./SUIVI_COURS.md) pour plus de détails.
+
+## 📚 Partie 4 : Projet Blog Complet 🚧 EN COURS
+
+Cette partie consiste en la création d'un projet blog complet avec authentification, base de données, upload d'images, et toutes les fonctionnalités d'un blog moderne.
+
+### Fonctionnalités principales (à venir)
+- 🔄 Optimisation des images avec next/image
+- 🔄 Gestion des métadonnées SEO
+- 🔄 Base de données (MongoDB/PostgreSQL)
+- 🔄 Authentification par session
+- 🔄 Système de tags et catégories
+- 🔄 Parsing Markdown et sécurité XSS
+- 🔄 Upload d'images avec CDN
+- 🔄 Dashboard utilisateur
+- 🔄 Cache et optimisations Next.js
+- 🔄 Déploiement en production
+
+**Progression** : 0/78 chapitres complétés (~12 heures estimées)
+
+Consultez le [SUIVI_COURS.md](./SUIVI_COURS.md) pour plus de détails sur les chapitres à venir.
 
 ## 📋 Suivi de Cours
 
