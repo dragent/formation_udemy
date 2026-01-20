@@ -82,7 +82,7 @@ npm run dev
 
 Consultez le [README.md](./3.styles-et-optimisation/README.md) et le [SUIVI_COURS.md](./SUIVI_COURS.md) pour plus de détails.
 
-## 📚 Partie 4 : Projet Blog Complet 🚧 EN COURS
+## 📚 Partie 4 : Projet Blog Complet ⏸️ EN ATTENTE
 
 Cette partie consiste en la création d'un projet blog complet avec authentification, base de données, upload d'images, et toutes les fonctionnalités d'un blog moderne.
 
