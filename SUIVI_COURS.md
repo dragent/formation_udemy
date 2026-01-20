@@ -321,7 +321,7 @@
 
 ---
 
-## 📖 Partie 3 : Styles et Optimisation 🚧 EN COURS
+## 📖 Partie 3 : Styles et Optimisation ✅ TERMINÉE
 
 ---
 
@@ -380,6 +380,8 @@
 - [x] **CSS Modules** : Utilisation de CSS Modules (`.module.css`) pour les styles scoped
 - [x] **Dark Mode** : Support automatique via `prefers-color-scheme`
 - [x] **Optimisation des performances** : Chargement optimisé des polices avec `display: "swap"`
+- [x] **Optimisation des images** : Utilisation de `next/image` avec configuration AVIF/WebP et attribut `sizes` pour le responsive
+- [x] **Métadonnées SEO** : Configuration complète des métadonnées avec OpenGraph, Twitter Cards, et options avancées
 
 ### 7. Structure des Routes
 ```
@@ -404,12 +406,15 @@ src/
 ```
 
 ### 9. Optimisation et Métadonnées
-- [ ] **Chapitre 29 : Optimisation des images** (6 min)
+- [x] **Chapitre 29 : Optimisation des images** (6 min)
   - Utilisation de `next/image` pour optimiser les images
-  - Configuration des images Next.js
-- [ ] **Chapitre 30 : Gérer les métadonnées** (4 min)
-  - Configuration des métadonnées SEO
-  - Utilisation de `metadata` dans Next.js
+  - Configuration des images Next.js dans `next.config.mjs`
+  - Configuration des formats AVIF et WebP pour l'optimisation
+  - Utilisation de l'attribut `sizes` pour le responsive
+- [x] **Chapitre 30 : Gérer les métadonnées** (4 min)
+  - Configuration des métadonnées SEO dans `layout.js`
+  - Utilisation de `metadata` dans Next.js avec OpenGraph et Twitter Cards
+  - Métadonnées enrichies avec title template, keywords, authors, robots
 
 ---
 
@@ -656,7 +661,7 @@ src/
 ---
 
 ## 🎓 Statut de la Partie 3
-🚧 **EN COURS** - Les concepts de styles, d'optimisation et de métadonnées sont en cours d'apprentissage.
+✅ **PARTIE 3 TERMINÉE** - Toutes les fonctionnalités principales des styles, de l'optimisation et des métadonnées ont été implémentées.
 
 ### Fonctionnalités Complétées
 - ✅ Configuration Tailwind CSS 4
@@ -668,15 +673,16 @@ src/
 - ✅ Composant Card avec SCSS (import global)
 - ✅ Page Pricing avec CSS Modules
 - ✅ Démonstration des deux approches de styling (SCSS global et CSS Modules)
+- ✅ Optimisation des images avec next/image (AVIF/WebP, sizes responsive)
+- ✅ Configuration complète des métadonnées SEO (OpenGraph, Twitter Cards, robots)
 
-### Chapitres à Compléter
-- [ ] Chapitre 29 : Optimisation des images
-- [ ] Chapitre 30 : Gérer les métadonnées
+### Chapitres Complétés
+- ✅ Chapitre 29 : Optimisation des images
+- ✅ Chapitre 30 : Gérer les métadonnées
 
 ### Progression
-- **Chapitres complétés** : 8/10 (Configuration initiale, polices, CSS, composants)
-- **Chapitres restants** : 2 (29-30)
-- **Progression** : 80% complété
+- **Chapitres complétés** : 10/10
+- **Progression** : 100% complété
 
 ---
 
