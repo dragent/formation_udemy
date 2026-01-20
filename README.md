@@ -8,7 +8,7 @@ Ce dépôt contient tous les projets de la formation Next.js sur Udemy, organis�
 formation-nextjs/
 ├── 1.app-router/              # Partie 1 : Next.js App Router ✅ TERMINÉE
 ├── 2.composants-et-donnes/    # Partie 2 : Composants et Données ✅ TERMINÉE
-├── 3.styles-et-optimisation/  # Partie 3 : Styles et Optimisation ✅ TERMINÉE
+├── 3.styles-et-optimisation/  # Partie 3 : Styles et Optimisation 🚧 EN COURS
 └── [partie 4]                 # Partie 4 : Projet Blog Complet 🚧 EN COURS
 ```
 
@@ -59,9 +59,9 @@ npm run dev
 
 Consultez le [README.md](./2.composants-et-donnes/README.md) et le [SUIVI_COURS.md](./SUIVI_COURS.md) pour plus de détails.
 
-## 📚 Partie 3 : Styles et Optimisation ✅ TERMINÉE
+## 📚 Partie 3 : Styles et Optimisation 🚧 EN COURS
 
-Le projet de la partie 3 se trouve dans le dossier `3.styles-et-optimisation/`. Cette partie couvre l'optimisation des polices avec `next/font/google`, la configuration avancée de Tailwind CSS 4 avec `@theme inline`, et le support du dark mode avec `prefers-color-scheme`.
+Le projet de la partie 3 se trouve dans le dossier `3.styles-et-optimisation/`. Cette partie couvre l'optimisation des polices avec `next/font/google`, la configuration avancée de Tailwind CSS 4 avec `@theme inline`, le support du dark mode avec `prefers-color-scheme`, l'optimisation des images et la gestion des métadonnées.
 
 ### Fonctionnalités principales
 - ✅ Optimisation des polices avec next/font/google
@@ -70,6 +70,8 @@ Le projet de la partie 3 se trouve dans le dossier `3.styles-et-optimisation/`. 
 - ✅ Support du dark mode avec prefers-color-scheme
 - ✅ SCSS et CSS Modules
 - ✅ Optimisation des performances (display: swap)
+- 🔄 Optimisation des images avec next/image (chapitre 29)
+- 🔄 Gestion des métadonnées SEO (chapitre 30)
 
 Pour démarrer ce projet :
 ```bash
@@ -85,8 +87,6 @@ Consultez le [README.md](./3.styles-et-optimisation/README.md) et le [SUIVI_COUR
 Cette partie consiste en la création d'un projet blog complet avec authentification, base de données, upload d'images, et toutes les fonctionnalités d'un blog moderne.
 
 ### Fonctionnalités principales (à venir)
-- 🔄 Optimisation des images avec next/image
-- 🔄 Gestion des métadonnées SEO
 - 🔄 Base de données (MongoDB/PostgreSQL)
 - 🔄 Authentification par session
 - 🔄 Système de tags et catégories

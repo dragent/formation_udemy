@@ -403,6 +403,14 @@ src/
         └── Card.scss
 ```
 
+### 9. Optimisation et Métadonnées
+- [ ] **Chapitre 29 : Optimisation des images** (6 min)
+  - Utilisation de `next/image` pour optimiser les images
+  - Configuration des images Next.js
+- [ ] **Chapitre 30 : Gérer les métadonnées** (4 min)
+  - Configuration des métadonnées SEO
+  - Utilisation de `metadata` dans Next.js
+
 ---
 
 ## 📖 Partie 4 : Projet Blog Complet 🚧 EN COURS
@@ -411,15 +419,7 @@ src/
 
 ## ✅ Avancement
 
-### 1. Optimisation et Métadonnées
-- [ ] **Chapitre 29 : Optimisation des images** (6 min)
-  - Utilisation de `next/image` pour optimiser les images
-  - Configuration des images Next.js
-- [ ] **Chapitre 30 : Gérer les métadonnées** (4 min)
-  - Configuration des métadonnées SEO
-  - Utilisation de `metadata` dans Next.js
-
-#### B. Projet Blog - Mise en Place
+### 1. Projet Blog - Mise en Place
 - [ ] **Chapitre 31 : Présentation du projet** (6 min)
   - Vue d'ensemble du projet blog
   - Architecture et fonctionnalités prévues
@@ -430,7 +430,7 @@ src/
   - Structure du layout principal
   - Technique CSS pour footer sticky
 
-#### C. Pages et Formulaires
+### 2. Pages et Formulaires
 - [ ] **Chapitre 34 : Création de la page d'accueil avec des données statiques** (22 min)
   - Page d'accueil du blog
   - Affichage de données statiques
@@ -440,7 +440,7 @@ src/
   - Finalisation du formulaire
   - Gestion des champs
 
-#### D. Base de Données et Modèles
+### 3. Base de Données et Modèles
 - [ ] **Chapitre 37 : Création de la base de données et connexion** (13 min)
   - Configuration de la base de données
   - Connexion à MongoDB/PostgreSQL
@@ -455,7 +455,7 @@ src/
 - [ ] **Chapitre 41 : Créer "getPosts" pour récupérer plusieurs articles** (6 min)
   - Server Action pour récupérer la liste des articles
 
-#### E. Système de Tags
+### 4. Système de Tags
 - [ ] **Chapitre 42 : Coder l'interface de l'ajout de tags** (17 min)
   - UI pour ajouter des tags aux articles
 - [ ] **Chapitre 43 : Coder les fonctions liées aux tags** (9 min)
@@ -467,7 +467,7 @@ src/
 - [ ] **Chapitre 46 : Enrichir getPost et afficher les tags** (6 min)
   - Affichage des tags sur les articles
 
-#### F. Markdown et Sécurité
+### 5. Markdown et Sécurité
 - [ ] **Chapitre 47 : Transformer le Markdown en HTML et l'afficher** (11 min)
   - Parsing et affichage du Markdown
   - Bibliothèque de parsing Markdown
@@ -482,7 +482,7 @@ src/
   - Syntax highlighting pour les blocs de code
   - Bibliothèque de colorisation syntaxique
 
-#### H. Gestion des Articles
+### 7. Gestion des Articles
 - [ ] **Chapitre 51 : Gérer les infos liées à l'ajout d'un article** (19 min)
   - Gestion complète des métadonnées d'article
   - Validation et traitement des données
@@ -499,7 +499,7 @@ src/
 - [ ] **Chapitre 56 : Gérer l'envoi du formulaire** (13 min)
   - Traitement du formulaire d'inscription
 
-#### J. Authentification - Connexion
+### 9. Authentification - Connexion
 - [ ] **Chapitre 57 : Coder l'UI de la page de connexion** (7 min)
   - Interface utilisateur de connexion
 - [ ] **Chapitre 58 : Comment fonctionne une authentification par session de base de données ?** (5 min)
@@ -525,7 +525,7 @@ src/
 - [ ] **Chapitre 67 : Gérer la potentielle redirection** (8 min)
   - Redirection après authentification
 
-#### L. Gestion des Erreurs
+### 11. Gestion des Erreurs
 - [ ] **Chapitre 68 : Création de la sous-classe AppError** (9 min)
   - Classe personnalisée pour les erreurs
 - [ ] **Chapitre 69 : Mieux gérer les erreurs** (9 min)
@@ -535,7 +535,7 @@ src/
 - [ ] **Chapitre 71 : Gérer les erreurs des méthodes serveurs** (11 min)
   - Gestion d'erreurs dans les Server Actions
 
-#### M. Pages Privées et Upload
+### 12. Pages Privées et Upload
 - [ ] **Chapitre 72 : Mise en place des pages privées** (4 min)
   - Protection des routes privées
 - [ ] **Chapitre 73 : Coder l'interface de mise en ligne de l'image** (11 min)
@@ -557,7 +557,7 @@ src/
 - [ ] **Chapitre 80 : Gérer la suppression d'un post** (21 min)
   - Fonctionnalité de suppression d'article
 
-#### O. Catégories et Navigation
+### 14. Catégories et Navigation
 - [ ] **Chapitre 81 : Créer une aggregation** (11 min)
   - Aggregations MongoDB pour les statistiques
 - [ ] **Chapitre 82 : Coder l'UI de la page categories** (10 min)
@@ -587,7 +587,7 @@ src/
 - [ ] **Chapitre 93 : Créer la Server Action editPost partie 5** (10 min)
   - Finalisation complète de l'édition
 
-#### Q. API et Middleware
+### 16. API et Middleware
 - [ ] **Chapitre 94 : Créer une route d'API de vérification d'authentification** (12 min)
   - Route API pour vérifier l'authentification
 - [ ] **Chapitre 95 : Création d'un middleware next** (16 min)
@@ -601,7 +601,7 @@ src/
 - [ ] **Chapitre 98 : Gérer quelques erreurs** (4 min)
   - Corrections finales
 
-#### S. Optimisation et Cache
+### 18. Optimisation et Cache
 - [ ] **Chapitre 99 : Coup du gueule sur le caching, c'est très important** (5 min)
   - Explication de l'importance du cache
 - [ ] **Chapitre 100 : Stratégie de cache des pages qui affichent des listes d'articles** (7 min)
@@ -621,26 +621,12 @@ src/
 - [ ] **Chapitre 106 : Étapes de mise en ligne d'un projet** (5 min)
   - Déploiement et mise en production
 
-**Total des chapitres : 78 chapitres**
-**Durée totale estimée : ~12 heures**
+**Total des chapitres : 76 chapitres (31-106)**
+**Durée totale estimée : ~11.8 heures**
 
 ---
 
 ## 📝 Notes Techniques - Partie 4
-- **next/font/google** : Optimisation automatique des polices Google Fonts avec préchargement et optimisation des sous-ensembles
-- **Variables CSS** : Utilisation de variables CSS pour centraliser la gestion des couleurs et polices
-- **@theme inline** : Directive Tailwind CSS 4 pour définir le thème directement dans le CSS
-- **SCSS avec imports globaux** : Utilisation de fichiers `.scss` importés directement (`import './Card.scss'`) pour des styles globaux, les classes sont utilisées directement comme strings (`className="Card"`)
-- **CSS Modules** : Utilisation de fichiers `.module.css` ou `.module.scss` pour des styles scoped, importés avec un objet (`import styles from './pricing.module.css'`) et utilisés via l'objet (`className={styles.title}`)
-- **Différence SCSS global vs CSS Modules** : 
-  - SCSS global : styles disponibles partout, risque de conflits de noms
-  - CSS Modules : styles isolés au composant, évite les conflits, génère des noms de classes uniques
-- **prefers-color-scheme** : Support natif du dark mode basé sur les préférences système
-- **display: swap** : Stratégie de chargement des polices pour améliorer les performances (évite le FOIT)
-- **Optimisation des performances** : Réduction du temps de chargement grâce à l'optimisation des polices
-
-- **next/image** : Optimisation automatique des images avec lazy loading et redimensionnement
-- **Metadata API** : Gestion des métadonnées SEO et Open Graph
 - **Base de données** : Intégration MongoDB/PostgreSQL avec Mongoose/Prisma
 - **Server Actions** : Actions serveur pour CRUD (Create, Read, Update, Delete)
 - **Modèles de données** : Schémas Mongoose/Prisma pour articles, utilisateurs, tags, sessions
@@ -670,7 +656,7 @@ src/
 ---
 
 ## 🎓 Statut de la Partie 3
-✅ **PARTIE 3 TERMINÉE** - Les concepts de styles et d'optimisation de base ont été complétés.
+🚧 **EN COURS** - Les concepts de styles, d'optimisation et de métadonnées sont en cours d'apprentissage.
 
 ### Fonctionnalités Complétées
 - ✅ Configuration Tailwind CSS 4
@@ -683,9 +669,14 @@ src/
 - ✅ Page Pricing avec CSS Modules
 - ✅ Démonstration des deux approches de styling (SCSS global et CSS Modules)
 
+### Chapitres à Compléter
+- [ ] Chapitre 29 : Optimisation des images
+- [ ] Chapitre 30 : Gérer les métadonnées
+
 ### Progression
-- **Chapitres complétés** : 8/8 (Configuration initiale, polices, CSS, composants)
-- **Progression** : 100% complété
+- **Chapitres complétés** : 8/10 (Configuration initiale, polices, CSS, composants)
+- **Chapitres restants** : 2 (29-30)
+- **Progression** : 80% complété
 
 ---
 
@@ -709,6 +700,4 @@ Date : 19/01/2026
 - Création de la page Pricing avec CSS Modules
 - Démonstration des deux approches de styling (SCSS global vs CSS Modules)
 - Documentation des 78 chapitres restants (29-106) organisés par thèmes
-- Séparation Partie 3 (Styles et Optimisation) et Partie 4 (Projet Blog Complet)
-- **Partie 3 marquée comme TERMINÉE**
 - Traduction des messages de commit en anglais
